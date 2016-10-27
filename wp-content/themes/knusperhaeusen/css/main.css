@@ -1,0 +1,1896 @@
+/* ===================
+Base Rules
+=================== */
+
+
+
+hr {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid;
+}
+
+
+
+.browserupgrade {
+    margin: 0.2em 0;
+    padding: 0.2em 0;
+    background: #ccc;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+
+/* ===================
+Layout Rules
+   =================== */
+:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+html {
+    color: white;
+    line-height: 1.4;
+}
+
+
+
+body {
+    background-color: beige;
+}
+
+
+.main-nav {
+    z-index: 10000!Important;
+}
+
+
+
+header,
+.menu1,
+.header-container,
+.main,
+.main-nav,
+nav,
+.main-wrapper,
+.footer,
+.col
+{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+
+}
+
+footer{
+    position:relative;
+    z-index: 1000000;
+}
+/* ===================
+fonts
+=================== */
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+
+@font-face {
+    font-style: normal;
+
+    font-weight: normal;
+    font-family:"Baar Zeitgeist";
+    src: url("../fonts/Baar_Zeitgeist.eot?") format("eot"),
+        url("../fonts/Baar_Zeitgeist.woff") format("woff"),
+        url("../fonts/Baar_Zeitgeist.ttf") format("truetype"),
+        url("../fonts/Baar_Zeitgeist.svg#BaarZeitgeist") format("svg");
+}
+
+
+
+body{
+    font-family: "Baar Zeitgeist", Optima, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+p,
+li,
+.lead{
+    font-size: 0.8em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    line-height: 1.9em;
+}
+
+.ulnav li{
+    font-weight: 600;
+}
+
+i{
+    font-size: 0.6em;
+}
+
+b{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.pgcol h2{
+    margin: 5% 0;
+    /*    text-align: center;*/
+    font-size: 1.2em;
+    color:white;
+
+}
+
+.list p{
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
+
+.einrichtungls h2{
+    color:white;
+}
+/* ===================
+Colours
+=================== */
+
+
+.navcolor {
+    background-color: #415F03;
+}
+
+.logocolor{
+    color: #ffe8ec;
+    text-shadow: -1px 0px 6px rgba(141, 150, 150, 1);
+}
+.navfontcolor {
+    color: #fbec03;
+}
+.maincolor {
+/*    background: url(../img/pattern-green-01.svg) repeat;*/
+    background-color: #7AAC16;
+    background-size: 30%;
+
+}
+
+
+
+/* ===================
+State Rules & Links
+=================== */
+
+a,
+a:link,
+a:visited
+{
+    text-decoration: none;
+    color: #fbec03;
+}
+
+a.active{
+    text-decoration: underline;
+}
+a:hover{
+    color: whitesmoke;
+}
+
+#logolink{
+    color:whitesmoke;
+
+}
+
+#logolink:hover{
+    color:darkorange;
+}
+
+
+
+/* ===================
+oocss Layout
+   =================== */
+.no-pic-space{
+    margin-top: 50px;
+}
+
+.left-align{
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 2em;
+}
+
+
+.align-dots{
+    margin-left: -2em;
+}
+.bottom-stay {
+    position: absolute;
+    bottom: 0px;
+}
+.padding-text{
+padding: 4% 15px;
+}
+.col {
+word-wrap: break-word;
+    color: white;
+}
+.align {
+    text-align: center;
+}
+
+.alignLeft{
+    text-align:left;
+}
+
+.top-padding {
+    padding-top: 30%;
+}
+.hide {
+    display: none;
+}
+.hidenone{
+    display:initial;
+}
+.top-stay {
+    position: fixed;
+    top: 0px;
+}
+.neg-mg-top {
+    margin-top: -25px;
+}
+.navfont-sm {
+    font-size: 1.5em;
+}
+.prim-pad-top {
+    padding-top: 1%;
+}
+.display{
+    display: block;
+}
+.lay{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.show{
+    display:block;
+
+}
+
+.titlecolor{
+    color: white;
+}
+
+.lead{
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+}
+
+.font-L{
+    padding-top: 1.8em;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.font-M{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.pgcol{
+    padding: 0 5%;
+    text-align: left;
+    line-height: 1.7em;
+/*    font-size: 1.2em;*/
+}
+
+.pgpadding1{
+    padding-top: 0px;
+}
+.pgpadding2{
+    padding-top: 0px;
+    margin-top: -200px;
+}
+
+.no-dots {
+
+    padding-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+    list-style-position:inside;
+}
+
+/*.disable{
+        pointer-events: none;
+        cursor: default;
+
+}
+
+/* ===================
+map
+=================== */
+.map{
+    margin-top: 4em;
+    text-align: center;
+}
+iframe{
+
+    margin:0 auto;
+    width:380px;
+    height:380px;
+}
+/* ===================
+Images
+   =================== */
+.front {
+    width: 100%;
+    background-image: url("../img/handinhand-sm.jpg");
+    background-position: 30%  50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wilkom{
+    height: 200px;
+    background-size: cover;
+    background-image: url("../img/hairflower-m.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+.kzpt{
+    height: 200px;
+
+    background-size: cover;
+    background-image: url("../img/konzept-s.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.erctg{
+    height: 200px;
+
+    background-size: cover;
+    background-image: url("../img/einrichtung-s.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.button{
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+.flaticon-reorder-option:before{
+    font-size: 2em;
+}
+
+
+
+.fa{
+    height: 25px;
+    font-size: 2em!important;
+    padding-top: 0!important;
+    margin-top: -8px!important;
+/*    pointer-events: none;
+    cursor: default;*/
+}
+
+i{
+
+    width: 100%;
+}
+
+/* ===================
+Header Rules
+   =================== */
+.header-container {
+    max-height: 100%;
+    position: relative;
+    top: 100px;
+
+    z-index: -2;
+}
+.front {
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+header {
+    height: 100%;
+}
+
+#logo{
+    text-align: left;
+    padding-left: 0.5em;
+    font-size:1.2em;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+
+}
+
+
+
+.logo {
+
+    margin-top: 0;
+    height: 1.5em;
+    margin-bottom: 2%;
+    font-size:2em;
+    padding-bottom: 1%;
+}
+
+.headertxt{
+
+}
+.headertxt h2{
+     padding-top: 80px;
+    font-size: 2em;
+    color:yellow;
+}
+.headertxt h1{
+    font-size: 2.5em;
+}
+/* ==============
+MOBILE: Menutoggel
+============== */
+
+.bignav{
+
+    display: none;
+}
+
+.mobile-nav{
+
+    padding-left: 0;
+    padding-top: 50px;
+    display: block;
+    background-color: #C65522;
+    list-style-type: none;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+.menu2{
+    min-width:221px;
+    width:100%;
+    height: 45px;
+    position: relative;
+    top:0px;
+    z-index: 10;
+}
+.menugraphic{
+    padding-top:2px;
+    width:1.8em;
+}
+.icon-menu{
+    color: #fbec03;
+    padding-top: 0;
+    position: absolute;
+    right:0.2em;
+
+    top:2px;
+    text-align: right;
+    font-size: 1.5em;
+    width: 80px;
+
+}
+
+#menu-button{
+     font-family: Arial, Helvetica, sans-serif!important;
+     width:42px;
+     height: 40px;
+     cursor: pointer;
+}
+#menu-button:focus, #menu-button:active{
+    cursor: pointer;
+    background-color:yellow;
+}
+
+.menu-name{
+    display: inline-block;
+    padding-top: 0em;
+    position: absolute;
+    right:0.2em;
+    top: 2px;
+    text-align: right;
+    font-size: 1em;
+}
+
+i:hover{
+    color: #70061a;
+}
+
+.main-menu {
+    z-index: 10000;
+    position: relative;
+    height: 100%;
+}
+
+.ulnav{
+    padding-top: 108px;
+    /*background-color: rgba(158, 100, 39, 1);*/
+    min-height: 100%;
+    list-style-type: none;
+    list-style-position:inside;
+    padding-left: 0;
+
+}
+
+nav {
+    display: none;
+    padding-top: 45px;
+    padding-bottom: 5px;
+}
+
+nav ul li {
+    font-size: 1em;
+    padding-bottom: 30px;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+.menu1{
+    display: none;
+}
+
+
+
+.main-entry{
+    display: none;
+}
+
+
+
+.main-nav{
+    height: 100%;
+
+}
+
+
+.main-nav-scrolled {
+    position: fixed;
+    z-index: 500000;
+    top: 0%;
+    width: 100%;
+    right: 0%;
+}
+
+
+#logomain{
+    display: none;
+}
+/* ==============
+   Mobile: Main Layout
+   ============== */
+
+.konzept-text{
+
+    display: none;
+}
+
+
+.wilkp{
+
+    padding-bottom: 1.5em;
+}
+
+.wilktitle{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.pgwrapper{
+    padding-bottom: 5%;
+    min-height:100%;
+    /*padding-top: 2em;*/
+}
+
+
+
+#willkommen{
+display: none!important;
+}
+
+#willkommen .pgwrapper{
+    margin-top: 0;
+    height: 100%;
+}
+
+
+
+
+
+/* ===================
+Mobile Footer
+   =================== */
+/* ===================
+Mobile Impressum
+=================== */
+
+
+#impressum{
+    padding-top: 150px;
+}
+
+
+
+/* ===================
+Buttons
+=================== */
+.button-wrap{
+    width:100%;
+    height: 40%;
+}
+
+.button {
+    display: none;
+    width:80%;
+    margin:auto 0;
+    cursor: pointer;
+    height: 150px;
+}
+.btnanmeldung.btn {
+    background: #ffeb14;
+    background-image: -webkit-linear-gradient(top, #ffeb14, #f0dc00);
+    background-image: -moz-linear-gradient(top, #ffeb14, #f0dc00);
+    background-image: -ms-linear-gradient(top, #ffeb14, #f0dc00);
+    background-image: -o-linear-gradient(top, #ffeb14, #f0dc00);
+    background-image: linear-gradient(to bottom, #ffeb14, #f0dc00);
+}
+.btn {
+    background: #db751c;
+    background-image: -webkit-linear-gradient(top, #db751c, #e67e29);
+    background-image: -moz-linear-gradient(top, #db751c, #e67e29);
+    background-image: -ms-linear-gradient(top, #db751c, #e67e29);
+    background-image: -o-linear-gradient(top, #db751c, #e67e29);
+    background-image: linear-gradient(to bottom, #db751c, #e67e29);
+border-color: transparent;
+-webkit-border-radius: 28px;
+-moz-border-radius: 28px;
+border-radius: 28px;
+font-family: Helvetica, sans-serif;
+color: #ffffff;
+font-size: 18px;
+padding: 10px 20px 10px 20px;
+text-decoration: none;
+}
+
+.btn:hover {
+    background: #d83a25;
+    background-image: -webkit-linear-gradient(top, #d83a25, #f04933);
+    background-image: -moz-linear-gradient(top, #d83a25, #f04933);
+    background-image: -ms-linear-gradient(top, #d83a25, #f04933);
+    background-image: -o-linear-gradient(top, #d83a25, #f04933);
+    background-image: linear-gradient(to bottom, #d83a25, #f04933);
+text-decoration: none;
+}
+
+.btalign{
+    width:200px;
+    display: table;
+    margin: 0 auto  5px auto;
+}
+
+
+/*****************************
+* ContACt Form
+**************************/
+
+.contactform{
+    padding-top:2em;
+    width:100%;
+    text-align: left;
+}
+.contactfield
+{
+    width:80%;
+    margin: 0 auto;
+}
+.contactfield p:last-of-type{
+    text-align: center;
+}
+.contactfield p input[type="submit"]{
+    width: 100%;
+}
+.kontaktinfo{
+    margin:0 auto;
+    text-align: left;
+    padding-left: 2em;
+}
+
+.form-wrap{
+    width:90%;
+    margin:0 auto;
+}
+
+
+.ajax-loader{
+    width:0;
+}
+
+/*****************************
+* Form
+**************************/
+#kita-form{
+    margin: 0 auto;
+    width:90%;
+}
+
+.empfehlung input{
+    height:1em;
+}
+
+span.wpcf7-list-item { display: block; }
+
+.form-wrap{
+    text-align: left;
+}
+
+.form-wrap h3,
+.submit-container{
+    text-align: center;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 375px) {
+
+    .font-M {
+        font-size: 0.9em;
+    }
+    .lead{
+        letter-spacing: 0.25em;
+    }
+    /* ==============
+    Main Photos
+    ============== */
+
+
+
+
+    /* ==============
+    header
+    ============== */
+
+    .front {
+        background-image: url("../img/handinhand-m.jpg");
+        background-position: 80% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .wilkom{
+        height: 300px;
+        background-size: cover;
+        background-image: url("../img/hairflower-m.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+    }
+
+
+    .kzpt{
+        height: 300px;
+
+        background-size: cover;
+        background-image: url("../img/konzept-m.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    /* ==============
+    MOBILE: Menu
+    ============== */
+
+    .icon-menu{
+        padding-top: 0;
+        position: absolute;
+        right:1em;
+        top:2px;
+        text-align: right;
+        font-size: 1.5em;
+        width: 80px;
+
+    }
+
+    nav ul li{
+        padding-top: 1.5%;
+        font-size: 1.3em;
+    }
+    .main-entry{
+        padding-top: 0;
+        line-height: 25px;
+    }
+
+    .arrow {
+
+        background: url("../img/button-img.png") no-repeat center;
+        background-size: 50%;
+        height: 100%;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    .button{
+    width: 50px;
+    height: 120px;
+    padding:5px;
+    margin-top: 2%;
+    }
+
+/*    .main-nav-scrolled .logo{
+        padding-top: 5%;
+    }
+*/
+
+
+    /* ==============
+    MOBILE: Main
+    ============== */
+
+
+
+    .main-nav{
+        height: 145px;
+    }
+
+    /* ==============
+    Main layout
+    ============== */
+    .pgpadding1{
+        padding-top: 0;
+    }
+
+
+    .pgwrapper{
+        padding-top: 15px;
+     width:100%;
+        overflow-x: hidden;
+    }
+
+
+/*****************************
+ * Forms
+ **************************/
+    form-container{
+        width: 50%;
+    }
+
+
+   .form-wrap
+    {
+        margin: 0 auto;
+        width:70%;
+    }
+
+}
+
+
+@media only screen and (min-width: 413px) {
+    .pgpadding1{
+        padding-top: 0;
+    }
+
+/*
+    .pgwrapper{
+        padding-top: 15px;
+    }
+*/
+
+    .lead{
+
+        text-align: center;
+        padding-top: 5px;
+        min-height: 94px;
+        letter-spacing: 0.2em;
+
+
+    }
+    .font-M {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    /* ============
+    WIDE: Menu
+    ============ */
+
+    .icon-menu{
+        width:80px;
+
+    }
+
+
+    .main-nav{
+        height: 15%;
+
+    }
+    .menu1{
+        font-size: 1.2em;
+    }
+
+
+    .button{
+        width: 150px;
+    }
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+
+/*    .main-nav-scrolled .logo,
+    {
+        padding-top: 3%;
+    }*/
+
+
+
+    nav{
+        padding-top: 45px;
+    }
+
+
+    /*****************************
+    * Forms
+    **************************/
+
+
+    .form-container{
+        width: 50%;
+    }
+
+
+    .form-wrap
+    {
+        margin: 0 auto;
+        max-width:55%;
+    }
+    /*****************************
+    * Contact Form
+    **************************/
+    .contactfield
+    {
+        width:300px;
+            margin-left:2em;
+            margin-right: auto;
+        }
+
+    .btalign{
+        margin-left:2em;
+        margin-right: auto;
+    }
+}
+@media only screen and (min-width: 768px) {
+
+
+    /* ==============
+    Main Photos
+    ============== */
+    .kzpt{
+        height: 500px;
+        padding:20%;
+        width: 100%;
+        background-image: url("../img/konzept.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .erctg{
+        height: 500px;
+        padding:20%;
+        width: 100%;
+        background-image: url("../img/einrichtung.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+    }
+
+    .erzh{
+        height: 500px;
+        padding:20%;
+        width: 100%;
+        background-image: url("../img/erzieher.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+    }
+
+    .wilkom{
+        height: 500px;
+        padding:20%;
+        width: 100%;
+        background-image: url("../img/hairflower.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+
+    }
+
+    .ktk{
+        height: 500px;
+        padding:20%;
+        width: 100%;
+        background-image: url("../img/kontakt.jpg");
+        background-repeat: no-repeat;
+    }
+
+    .elt{
+        height: 500px;
+        padding:20%;
+        width: 100%;
+        background-image: url("../img/eltern.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .job{
+        height: 500px;
+        padding:20%;
+        width: 100%;
+        background-image: url("../img/job.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    .akt{
+        height: 500px;
+        padding:20%;
+        width: 100%;
+        background-image: url("../img/actuelles.jpg");
+        background-repeat: no-repeat;
+        background-position:50% 65%;
+    }
+
+
+    .front {
+        background-image: url("../img/handinhand-l.jpg");
+        background-position: 80% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* ============
+    oosc
+    ============ */
+
+    .no-pic-space{
+    margin-top: 100px;
+}
+
+
+
+    .pgpadding1{
+    padding-top: 0;
+    }
+
+    .txt{
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+
+    .stickybottom{
+        position:absolute;
+        bottom: 0;
+    }
+
+    .middle{
+        margin: 0 auto;
+    }
+
+
+
+
+    .align{
+        text-align: left
+    }
+    .hide{
+        display: block;
+    }
+
+    .pgcol{
+        padding: 0 2%;
+    }
+
+    .col2{
+        background-size: 100%;
+        /*padding: 2% 5%;*/
+    }
+
+
+
+
+    .mulicol2{
+        column-count:2;
+        -moz-column-count:2;
+        -webkit-column-count: 2;
+        -moz-column-gap: 2em;
+        -webkit-column-gap: 2em;
+        column-gap: 2em;
+/*        font-size: 0.8em;*/
+        line-height: 1.8;
+    }
+
+
+    .colthree .pgcol{
+        width: 33%;
+        float:left;
+/*        font-size: 0.5em;*/
+    }
+
+    .coltwo{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 50%;
+        float:left;
+/*        font-size: 1em;*/
+    }
+
+    .pgwrapper{
+        /*padding-top: 50px;*/
+        margin-top: -81px;
+        min-height: 100%;
+    }
+
+    /* ============
+    Layout
+    ============ */
+
+    .lead{
+
+        text-align: center;
+        padding-top: 5px;
+        min-height: 94px;
+
+        letter-spacing: 0.1em;
+
+
+    }
+    .font-M {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+
+
+    .header-container{
+        height:100%;
+    }
+
+    h2{
+        font-size:1.1em;
+    }
+
+    #willkommen{
+        display: initial!important;
+    }
+
+    .main-entry{
+        display: none;
+    }
+    /* ============
+    WIDE: Menu
+   ============ */
+
+   i .fa,
+    .mobile-nav{
+        display:none!important;
+
+    }
+
+    .bignav{
+        display: block;
+        list-style-type: none;
+    }
+    .bignav li{
+        display:inline-block;
+        font-size: 0.9em;
+        display: inline-block;
+        margin-right: 1%;
+
+    }
+
+    .bignav li:last-of-type
+    /*    .ulnav li:nth-last-child(2)*/
+    {
+        /*        margin-left:0;*/
+        padding-left:0;
+        padding-right:0;
+        margin-right:-4px;
+    }
+    /*.ulnav li:nth-last-child(3)
+    {
+    padding-right:0;
+    margin-right:0;
+}*/
+
+    .bignav li:first-of-type{
+        margin-left:-4px;
+        padding-left:0;
+    }
+
+    .bignav{
+        background-color: rgba(0,0,0,0.2);
+        font-size: 1.2em;
+        margin: 0 auto;
+        /*        float: left;*/
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 90px;
+        padding-top:30px;
+        list-style-position: inside;
+        padding-left: 0;
+
+
+    }
+
+    .menu1{
+        position: relative;
+    }
+
+
+
+    li.hide{
+        display:inline-block;
+    }
+
+
+    .menu1{
+        display: inline-block;
+        height: 100%;
+        padding: 0;
+    }
+
+
+    .menu-icon {
+        display: none!important;
+        /*important due to jquery*/
+    }
+    .main-nav {
+        padding-bottom:0;
+        height: 100px;
+    }
+
+/*    .main-nav-scrolled .logo{
+        padding-top:0;
+        margin-top: 2%;
+    }*/
+
+    .main-menu{
+        width: 100%;
+        padding-top:60px;
+        height: 80px;
+    }
+
+
+
+    .ulnav li{
+
+        font-size: 0.9em;
+        display: inline-block;
+
+
+        margin-right: 3%;
+
+    }
+
+    .list.navbar{
+        top:0px;
+    }
+
+    .navbar{
+        /*position: absolute;*/
+        right:0;
+        bottom: 0px;
+        padding-bottom:0;
+        height: 90px;
+/*        z-index: 5000000000;*/
+
+    }
+
+
+
+    nav {
+        position: absolute;
+        margin:0;
+        /*top: 50px;*/
+        display: inline-block;
+        padding-top: 0%;
+        font-size: 1em;
+        text-align: right;
+    }
+
+
+    .button {
+        position: absolute;
+        right: 2%;
+        bottom: 20%;
+
+    }
+
+    .thickbutton{
+        background: url('../img/button-img.png') no-repeat center;
+        background-size: 50%;
+    }
+
+    #logomain {
+        z-index: 100000;
+        margin-top: 0;
+        position: absolute;
+        left: 20px;
+        top: 0;
+        padding:0;
+    }
+
+
+    #logo {
+        margin-top: 0;
+        position: absolute;
+        left: 30px;
+       top: 10px;
+        pointer-events: all;
+        cursor: default;
+        font-size: 1.8em;
+    }
+
+
+    .main-entry {
+
+       font-size: 1em;
+        margin: 0;
+        position: absolute;
+        left: 45%;
+        top: 20%;
+        text-align: left;
+    }
+
+    /* ============
+    WIDE: Main
+   ============ */
+    .konzept-text{
+        display: block;
+    }
+
+    #willkommen .willpadding{
+        margin-top: 0;
+    }
+
+
+
+
+    /* ============
+    footer
+    ============ */
+    .footer {
+        text-align: center;
+        width:100%;
+        background-color: black;
+        height: 76px;
+        margin: 0;
+
+
+    }
+    .footer-padding li {
+        padding-top: 2%;
+
+    }
+
+
+
+
+    .footer-list li{
+        display: inline-block;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 0.8em;
+
+    }
+
+    /*****************************
+    * Forms
+    **************************/
+    .form-container{
+        width: 40%;
+    }
+
+
+    .form-wrap
+    {
+        margin: 0 auto;
+        max-width:40%;
+    }
+
+    input{
+        height: 1em;
+    }
+
+    /*****************************
+    * map
+    **************************/
+    .map{
+        width:300px;
+
+    }
+    .contact-second{
+        float:right;
+        width:300px;
+        margin-right: 3em;
+
+    }
+    .contact-prime{
+        margin-left: 0;
+        float:left;
+        width:300px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 780px){
+    .bignav li{
+        margin-right: 1%;
+        font-size: 0.8em;
+    }
+
+    .bignav li:last-of-type{
+        margin-right:-4px;
+    }
+
+
+    .bignav li:first-of-type{
+        margin-left:-4px;
+    }
+}
+@media only screen and (min-width: 820px){
+    .bignav li{
+
+        margin-right: 2.5%;
+    }
+
+    .bignav li:last-of-type
+    {
+
+        margin-right:-2px;
+    }
+
+
+    .bignav li:first-of-type{
+        margin-left:-2px;
+
+    }
+}
+
+@media only screen and (min-width: 884px){
+    .bignav li{
+
+        margin-right: 3%;
+    }
+
+    .bignav li:last-of-type
+    {
+
+        margin-right:0px;
+    }
+
+
+    .bignav li:first-of-type{
+        margin-left:0px;
+
+    }
+}
+
+@media only screen and (min-width: 952px){
+    .bignav li{
+        margin-right: 4%;
+    }
+    /*****************************
+    * Forms
+    **************************/
+    .form-container{
+        width: 40%;
+        height: 100%;
+    }
+    .form-wrap h3{
+        text-align: left;
+    }
+
+    .form-wrap
+    {
+        padding-left: 4em;
+    }
+
+
+    .form-col{
+
+        float:left;
+
+    }
+
+
+
+    .form-colthree{
+
+    }
+
+    .form-colthree p{
+        float:right;
+
+        margin: 0;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1140px) {
+
+
+    /*****************************
+    * map
+    **************************/
+    .map{
+        width:300px;
+
+    }
+    .contact-second{
+        margin-right: 10em;
+
+    }
+
+
+
+    /* ============
+    WIDE: Menu
+    ============ */
+    .main-menu{
+
+        padding-top:0;
+        height: 0;
+    }
+  .list{
+        top:0;
+    }
+ .bignav li{
+        margin-left: 1%;
+        margin-right: 2%;
+        font-size: 1em;
+
+    }
+    .bignav li:last-of-type,
+    .bignav li:nth-last-child(2)
+    {
+        padding:0
+    }
+
+    .bignav li:nth-last-child(3)
+    {
+        padding-right:0
+    }
+
+    .bignav li:first-of-type{
+        padding-left:0
+    }
+/*    .navbar{
+        bottom:10px;
+    }*/
+
+    .menu1{
+        padding-top: 0;
+    }
+
+    .main-menu{
+        left:0;
+        right:0;
+
+    }
+
+    .menu1{
+        min-height: 100px;
+        padding-top: 0;
+    }
+
+    .main-entry{
+        top: 20px;
+        left: 50%;
+    }
+
+    #logomain{
+        top: 24px;
+    }
+
+    /* ============
+    WIDE: Main
+    ============ */
+    body,
+    .maxsize,
+    .navbar,
+    .ulnav,
+    footer,
+    #willkommen,
+    .main-wrapper,
+    .main,
+    .pgwrapper,
+    .main-nav,
+    .front,
+    .menu1,
+    .main-menu{
+        left:0;
+        right: 0;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+
+
+    .mulicol3{
+        column-count:3;
+        -moz-column-count:3;
+        -webkit-column-count: 3;
+        -moz-column-gap: 1em;
+        -webkit-column-gap: 1em;
+        column-gap: 1em;
+
+    }
+
+    #willkommen{
+        height: 100%;
+    }
+    /* ==============
+    Main Photos
+    ============== */
+    .wilkom{
+        background-position: 50% 30%;
+        /*height:100%;*/
+    }
+
+
+
+
+
+
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.visuallyhidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.visuallyhidden.focusable:focus {
+    position: static;
+    clip: auto;
+    overflow: visible;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+
+
+
+
+*:after {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+a:visited {
+    text-decoration: underline;
+}
+/*
+a[href]:after {
+    content: " (" attr(href) ")";
+}
+*/
+abbr[title]:after {
+    content: " (" attr(title) ")";
+}
+a[href^="javascript:"]:after {
+    content: "";
+}
+blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+thead {
+    display: table-header-group;
+}
+img {
+    page-break-inside: avoid;
+}
+img {
+    max-width: 100% !important;
+}
+h3 {
+    orphans: 3;
+    widows: 3;
+}
+h3 {
+    page-break-after: avoid;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================================
+ * Form
+ * ======================================*/
+#kita-form{
+    margin-top: 80px;
+    min-width: 220px;
+    background-color: darkslategrey;
+    padding: 1.5em 0;
+    position: relative;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+
+
+}
+
+#kita-form:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-container{
+    width:100%;
+    margin: 0 auto;
+}
+.form-wrap p{
+/*    display: inline-block;*/
+    margin-left: auto;
+    margin-right: auto;
+    width:200px
+    padding-bottom: 1em;
+
+
+}
+
+
+.form-wrap h2{
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+input{
+    height: 2.5em;
+}
+
+input[type=checkbox]{
+    width:auto;
+}
+input,
+textarea
+
+{
+
+    width:100%;
+    color: black;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+
+}
+
+::-webkit-input-placeholder { opacity: 0.6; color: darkorange; } /* gray80 */
+:-moz-placeholder           { opacity: 0.6; color: darkorange; } /* Firefox 18- (one color)*/
+::-moz-placeholder          { opacity: 0.6; color: darkorange; } /* Firefox 19+ (double colons) */
+:-ms-input-placeholder      { opacity: 0.6; color: darkorange; }
+
+/*
+#button-p{
+
+   max-width: 200px;
+
+}
+*/
+
+input[type="submit"] {
+    text-transform:uppercase;
+    margin-top: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    width: 200px;
+    background: #db751c;
+    background-image: -webkit-linear-gradient(top, #db751c, #e67e29);
+    background-image: -moz-linear-gradient(top, #db751c, #e67e29);
+    background-image: -ms-linear-gradient(top, #db751c, #e67e29);
+    background-image: -o-linear-gradient(top, #db751c, #e67e29);
+    background-image: linear-gradient(to bottom, #db751c, #e67e29);
+    border-color: transparent;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover {
+    background: #d83a25;
+    background-image: -webkit-linear-gradient(top, #d83a25, #f04933);
+    background-image: -moz-linear-gradient(top, #d83a25, #f04933);
+    background-image: -ms-linear-gradient(top, #d83a25, #f04933);
+    background-image: -o-linear-gradient(top, #d83a25, #f04933);
+    background-image: linear-gradient(to bottom, #d83a25, #f04933);
+    text-decoration: none;
+}
+
+div.wpcf7-validation-errors {
+    border:none;
+}
